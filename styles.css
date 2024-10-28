@@ -1,0 +1,145 @@
+body {
+  background: #834275;
+  color: #ff0;
+  font-size: 35px;
+  font-family: arial;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  width: 70vh;
+  border: 10px solid black;
+  box-shadow: 5px 5px 50px;
+  border-radius: 50px;
+  background-color: rgb(3, 78, 175);
+  margin-top: 90px;
+}
+.main-title {
+  font-size: 50px;
+  margin-bottom: 30px;
+  background-color: #00264d;
+  padding: 10px;
+  border-radius: 10px;
+}
+body #container .length-control {
+  width: 250px;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #f9fbfb;
+}
+body #container button {
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+button {
+  margin-top: 20px;
+}
+body #container .btn-level,
+body #container .length-control {
+  display: inline-block;
+}
+body #container .btn-level .btn-level:nth-child(3),
+body #container .length-control .btn-level:nth-child(3) {
+  width: 40px;
+}
+.timer {
+  border: 7px solid #13f53a;
+  margin: 1px auto 20px auto;
+  width: 270px;
+  height: 160px;
+  border-radius: 60px;
+  position: relative;
+}
+.timer-wrapper {
+  position: absolute;
+  width: 190px;
+  height: 110px;
+  left: 50%;
+  top: 50%;
+  margin-left: -95px;
+  margin-top: -57px;
+}
+#time-left {
+  font-family: arial;
+  font-size: 75px;
+}
+body #container .timer .timer-control button:active {
+  color: #13353a;
+}
+
+@media screen and (max-width: 500px) {
+  #container {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+  }
+  .timer-wrapper {
+    position: absolute;
+    width: 190px;
+    height: 110px;
+    left: 50%;
+    top: 60%;
+    margin-left: -95px;
+    margin-top: -57px;
+  }
+  body #container .main-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  #container {
+    margin-top: 50px;
+  }
+  body #container .length-control {
+    width: 150px;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  button {
+    margin-top: 0;
+  }
+  .timer {
+    border: 7px solid #f4c22f;
+    margin: 1px auto 10px auto;
+    width: 160px;
+    height: 100px;
+    font-size: 30px;
+    border-radius: 40px;
+    position: relative;
+    padding-top: 30px;
+  }
+  #time-left {
+    font-size: 40px;
+    margin-top: 10px;
+    color: rgb(8, 9, 6);
+  }
+}
+.author {
+  display: inline-block;
+  text-align: center;
+  font-family: arial, sans-serif;
+  margin-top: 25px;
+  font-size: 16px;
+  color: #0e2a29;
+  background-color: rgb(230, 236, 231);
+  padding: 10px;
+  border-radius: 10px;
+}
+.author a {
+  text-decoration: none;
+  color: #0174e8;
+  line-height: 10px;
+  font-size: 12px;
+}
