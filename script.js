@@ -5,7 +5,8 @@
   
 !(function () {
   "use strict"; // 2. Strict Mode: This activates "strict mode" in JavaScript, which helps catch potential errors during development.
- 
+
+    
     class e extends React.Component {
     render() {
       return React.createElement(
@@ -44,8 +45,14 @@
       );
     }
   }
-    
-  class t extends React.Component {
+
+    // t Class (Main Timer):
+    //     This is the main component of the Pomodoro timer.
+    //     It manages the state (data) of the timer, including break length, session length, timer state (running/stopped), 
+    //     timer type (Session/Break), timer value (in seconds), interval ID for the timer functionality, alarm color, and 
+    //     a reference to the audio element for the beep sound.
+         
+    class t extends React.Component {
     constructor(e) {
       super(e),
         (this.state = {
