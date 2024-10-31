@@ -70,6 +70,19 @@
         (this.clockify = this.clockify.bind(this)),
         (this.reset = this.reset.bind(this));
     }
+      // It includes various methods for:
+      //   1.setBrkLength and setSeshLength: Update the break and session length based on user interaction with the length control component.
+      //   2.lengthControl: Handles increment/decrement for break and session lengths, ensuring they stay within valid ranges.
+      //   3.timerControl: Starts or stops the timer based on its current state.
+      //   4.beginCountDown: Starts the timer by setting up an interval that decrements the timer value every second.
+      //   5.decrementTimer: Decrements the timer value in the state.
+      //   6.phaseControl: Handles the logic when the timer reaches 0. It triggers warnings, buzzer sound, and switches between session and break phases.
+      //   7.warning: Changes the background color of the timer display based on remaining time (red for less than a minute).
+      //   8.buzzer: Plays the beep sound when the timer reaches 0.
+      //   9.switchTimer: Updates the timer state (type and value) when switching between session and break phases.
+      //   10.clockify: Formats the remaining time in minutes and seconds for display.
+      //   11.reset: Resets the timer to its initial state.
+    
     setBrkLength(e) {
       this.lengthControl(
         "brkLength",
