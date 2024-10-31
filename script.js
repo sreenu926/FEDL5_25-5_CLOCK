@@ -4,7 +4,7 @@
     // It wraps the entire code to ensure variables and functions defined within this scope don't leak into the global namespace.
   
 !(function () {
-  "use strict";
+  "use strict"; // 2. Strict Mode: This activates "strict mode" in JavaScript, which helps catch potential errors during development.
   class e extends React.Component {
     render() {
       return React.createElement(
