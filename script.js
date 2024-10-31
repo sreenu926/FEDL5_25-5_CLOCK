@@ -5,7 +5,8 @@
   
 !(function () {
   "use strict"; // 2. Strict Mode: This activates "strict mode" in JavaScript, which helps catch potential errors during development.
-  class e extends React.Component {
+ 
+    class e extends React.Component {
     render() {
       return React.createElement(
         "div",
@@ -43,6 +44,7 @@
       );
     }
   }
+    
   class t extends React.Component {
     constructor(e) {
       super(e),
@@ -170,7 +172,11 @@
         this.audioBeep.pause(),
         (this.audioBeep.currentTime = 0);
     }
-    render() {
+      
+      // The render method defines the JSX (JavaScript XML) structure of the timer UI. 
+      // It uses React components to display elements like the title, length control components, timer display, start/stop, & reset buttons, and author information.
+   
+      render() {
       return React.createElement(
         "div",
         null,
