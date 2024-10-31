@@ -253,6 +253,10 @@
       );
     }
   }
+    // 4. Rendering the Application:
+            // ReactDOM.createRoot(document.getElementById("app")).render(React.createElement(t, null));
+            // This line renders the t (main timer) component to the element with the ID "app" in the HTML document.
+    
   ReactDOM.createRoot(document.getElementById("app")).render(
     React.createElement(t, null)
   );
