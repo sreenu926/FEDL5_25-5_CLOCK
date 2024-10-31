@@ -6,6 +6,9 @@
 !(function () {
   "use strict"; // 2. Strict Mode: This activates "strict mode" in JavaScript, which helps catch potential errors during development.
 
+    // e Class (Length Control):
+    //     This class represents a component for controlling the length (break or session duration) of the timer.
+    //     It takes props (properties) like title, length, onClick, etc., to display the label, current length value, & buttons.
     
     class e extends React.Component {
     render() {
