@@ -1,3 +1,8 @@
+// 1. Function Wrapper (Immediately Invoked Function Expression - IIFE):
+    // !(function () { ... })();
+    // This is an IIFE, a function that executes immediately after it's defined. 
+    // It wraps the entire code to ensure variables and functions defined within this scope don't leak into the global namespace.
+  
 !(function () {
   "use strict";
   class e extends React.Component {
